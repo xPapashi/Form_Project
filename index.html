@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to my page!</h1>
-</body>
+  </head>
+  <body>
+    <header class="form-header">
+      <h1>Speaker Submission</h1>
+      <p><em>Want to speak at our fake conference?</em></p>
+    </header>
+    <form action="#" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name">Name</label>
+            <input type="text" name="full-name" id="full-name">
+        </div>
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Joe@gmail.com">
+        </div>
+        <fieldset class="legacy-form-row">
+            <legend>Type of Talk</legend>
+            <input type="radio" id="talk-type-1" name="talk-type" value="main-stage"/>
+            <label for="talk-type-1" class="radio-label">Main Stage</label>
+
+            <input type="radio" id="talk-type-2" name="talk-type" value="workshop"/>
+            <label for="talk-type-2" class="radio-label">Workshop</label>
+        </fieldset>
+
+        <div class='form-row'>
+            <label for='t-shirt'>T-Shirt Size</label>
+            <select id='t-shirt' name='t-shirt'>
+              <option value='xs'>Extra Small</option>
+              <option value='s'>Small</option>
+              <option value='m'>Medium</option>
+              <option value='l'>Large</option>
+            </select>
+          </div>
+    </form>
+  </body>
 </html>
