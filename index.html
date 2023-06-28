@@ -8,16 +8,13 @@
   </head>
   <body>
     <div class="content">
-      <div class="left">
+      <div class="bg-img">
         <div class="logo">
           <img src="./odin-lined.png" alt="" />
           <h1>ODIN</h1>
         </div>
         <div class="copyright">
           <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
-        </div>
-        <div class="bg-img">
-          <img src="./photo-1585202900225-6d3ac20a6962.avif" alt="" />
         </div>
       </div>
       <div class="right">
@@ -29,53 +26,45 @@
           <p class="paragraph">Sign up <em>now</em> to get started.</p>
           <p class="paragraph space">You <em>know</em> you want to.</p>
         </div>
-        <div class="container-form">
-          <h2>Let's do This!</h2>
-          <div class="form">
-            <form action="#">
+        <form action="#">
+          <div class="inputs-section">
+            <h2>Let's do This!</h2>
+            <div class="inputs">
               <div class="input">
-                <label for="forename">First Name</label>
-                <input
-                  type="text"
-                  name="forename"
-                  id="forename"
-                  min="3"
-                  max="24"
-                />
+                <label for="">First Name</label>
+                <input type="text" name="forename" id="forename" />
               </div>
               <div class="input">
-                <label for="surname">Last Name</label>
-                <input
-                  type="text"
-                  name="surname"
-                  id="surname"
-                  min="3"
-                  max="24"
-                />
+                <label for="">Last Name</label>
+                <input type="text" name="surname" id="surname" />
               </div>
+            </div>
+            <div class="inputs">
               <div class="input">
-                <label for="email">Email</label>
+                <label for="">Email</label>
                 <input type="email" name="email" id="email" />
               </div>
               <div class="input">
-                <label for="phone">Phone Number</label>
-                <input type="number" name="phone" id="phone" />
+                <label for="">Phone Number</label>
+                <input type="tel" name="phone" id="phone" />
               </div>
+            </div>
+            <div class="inputs">
               <div class="input">
-                <label for="password">Password</label>
+                <label for="">Password</label>
                 <input type="password" name="password" id="password" />
               </div>
               <div class="input">
-                <label for="password2">Confirm Password</label>
+                <label for="">Confirm Password</label>
                 <input type="password" name="password2" id="password2" />
               </div>
-            </form>
+            </div>
           </div>
-        </div>
-        <div class="bottom">
-          <button class="btn">Create Account</button>
-          <span> Already have an account? <a href="">Log in</a> </span>
-        </div>
+          <div class="bottom">
+            <button class="btn">Create Account</button>
+            <span> Already have an account? <a href="">Log in</a> </span>
+          </div>
+        </form>
       </div>
     </div>
   </body>

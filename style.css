@@ -3,28 +3,33 @@
     margin: 0;
 }
 
-body {
-    height: 100vh;
-}
-
 .content {
     display: flex;
-    justify-content: space-between;
+    min-height: 100vh;
 }
 
 /* Left Content */
 
-.left {
+.bg-img {
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex:3;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(./leaf-image.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-width: 400px;
 }
 
 .logo {
-    position: absolute;
-    top: 20%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    font-size: 5.5rem;
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: #00000060;
 }
 
 .logo h1 {
@@ -37,7 +42,6 @@ body {
 }
 
 .copyright {
-    position: absolute;
     margin-bottom: 1.2rem;
     color: #fff;
 }
@@ -45,7 +49,7 @@ body {
 /* Right Content */
 
 .right {
-    flex: 1;
+    flex: 5;
     background-color: #f8f7f7;
 }
 
@@ -64,27 +68,27 @@ body {
     margin-top: 20px;
 }
 
-.container-form {
+.inputs-section {
     padding: 2rem 3rem;
     background-color: #fff;
     box-shadow: 0px 15px 10px -18px #3f3f3f;
 }
 
-.container-form h2 {
-    margin-bottom: 1rem;
-}
-
 form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap:1rem;
-    width: 500px;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
 }
 
 .input {
     display: flex;
     flex-direction: column;
+    width: 300px;
 }
 
 input {
@@ -104,16 +108,14 @@ input:invalid {
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.25);
 }
 
-/* Bottom */
-
 .bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 2rem 3rem;
 }
 
-.bottom .btn {
+.btn {
     font-size: 15px;
     font-weight: bold;
     background-color: #596D48;
